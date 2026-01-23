@@ -23,5 +23,3 @@ It is a **frontend-only React application** built with **Vite**, **Tailwind CSS*
 
 ---
 Developed by SanthushEk All Rights Reserved @2026
-```bash
-git clone https://github.com/SanthushEk/Portfolio-Website.git
