@@ -13,7 +13,7 @@ import Projects from "./components/projects";
 import ContactMe from "./components/contactMe";
 import Footer from "./components/footer";
 import MoreCertifications from "./components/moreCertifications";
-import AllProjects from "./components/allProjects";
+import AllProjects from "./components/AllProjects";
 import Cursor from "./diagrams/curser";
 import MySelf from "./components/mySelf";
 import ScrollToTop from "./diagrams/scrollToTop";
