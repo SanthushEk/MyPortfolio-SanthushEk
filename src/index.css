@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------- BASE STYLES ---------------- */
+body {
+  @apply bg-gray-900 text-white overflow-x-hidden;
+  font-family: "Cairo", sans-serif;
+
+  /* Firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #33cdcc #1a1a1a;
+}
+
+/* ---------------- WEBKIT SCROLLBARS ---------------- */
+/* Apply to all scrollable elements */
+*::-webkit-scrollbar {
+  width: 10px;  /* vertical scrollbar width */
+  height: 6px; /* horizontal scrollbar height */
+}
+
+*::-webkit-scrollbar-track {
+  background: #1a1a1a; /* track color */
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #33cdcc; /* thumb color */
+  border-radius: 10px;
+  border: 2px solid #1a1a1a; /* padding effect */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #20a5a0; /* neon hover */
+}

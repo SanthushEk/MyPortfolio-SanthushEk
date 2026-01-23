@@ -1,0 +1,172 @@
+[
+  {
+    "title": "AWS Educate Getting Started with Cloud Ops",
+    "description": "Completed Cloud Operations training and passed the post-course assessment.",
+    "imageKey": "cloudOps",
+    "category": "AWS Educate",
+    "provider": "Amazon Web Services",
+    "url": "https://www.credly.com/badges/a0fa3d69-8f75-47dd-a6e0-08d6fbea5357/public_url"
+  },
+  {
+    "title": "AWS Educate Getting Started with Compute",
+    "description": "Completed Compute services training with required assessment scores.",
+    "imageKey": "compute",
+    "category": "AWS Educate",
+    "provider": "Amazon Web Services",
+    "url": "https://www.credly.com/badges/102caee1-52f3-4d0a-9063-30b4d4c17d70/public_url"
+  },
+  {
+    "title": "AWS Educate Getting Started with Databases",
+    "description": "Completed Databases training and passed the assessment.",
+    "imageKey": "databases",
+    "category": "AWS Educate",
+    "provider": "Amazon Web Services",
+    "url": "https://www.credly.com/badges/21f15724-0370-4efa-9e08-b3e32ed27618/public_url"
+  },
+  {
+    "title": "AWS Educate Getting Started with Networking",
+    "description": "Learned core networking concepts and AWS networking services.",
+    "imageKey": "networking",
+    "category": "AWS Educate",
+    "provider": "Amazon Web Services",
+    "url": "https://www.credly.com/badges/f444ded5-909c-4864-a354-2e9cbb5b5765/public_url"
+  },
+  {
+    "title": "AWS Educate Getting Started with Security",
+    "description": "Gained foundational knowledge of AWS security services.",
+    "imageKey": "security",
+    "category": "AWS Educate",
+    "provider": "Amazon Web Services",
+    "url": "https://www.credly.com/badges/35425d64-432b-4d6d-89f8-782ef15c7618/public_url"
+  },
+  {
+    "title": "AWS Educate Getting Started with Serverless ",
+    "description": "Earners of this badge have completed the Getting Started with Serverless training and achieved the required scores on the post-course assessment.",
+    "imageKey": "serverless",
+    "category": "AWS Educate",
+    "provider": "Amazon Web Services",
+    "url": "https://www.credly.com/badges/2df7f98e-d35e-460b-b5ab-9c82b6f07ffc/public_url"
+  },
+  {
+    "title": "AWS Educate Getting Started with Storage",
+    "description": "Earners of this badge have completed the Getting Started with Storage training and achieved the required scores on the post-course assessment.",
+    "imageKey": "storage",
+    "category": "AWS Educate",
+    "provider": "Amazon Web Services",
+    "url": "https://www.credly.com/badges/9e36c65f-dd29-472f-93f6-2966420b2871/public_url"
+  },
+  {
+    "title": "AWS Educate Introduction to Cloud 101",
+    "description": "Earners of this badge have completed the Cloud Computing 101 training and achieved the required scores on the post-course assessment.",
+    "imageKey": "cloud101",
+    "category": "AWS Educate",
+    "provider": "Amazon Web Services",
+    "url": "https://www.credly.com/badges/390169b1-35dc-4d86-b2e9-9c9a3290b9ea/public_url"
+  },
+  {
+    "title":"Docker Essentials: A Developer Introduction",
+    "description": "The individual knows how to run containers from Docker Hub, create Docker containers, and how to solve basic problems of orchestration (reconciliation, scaling, high availability, service discovery).",
+    "imageKey": "IBMdocker",
+    "category": "Other",
+    "provider": "IBM",
+    "url": "https://www.credly.com/badges/ab92dc66-84eb-4b3e-8e68-922e26a9fe92/public_url"
+  },
+  {
+    "title":"Legacy Responsive Web Design V8",
+    "description": "Completed FreeCodeCamp’s Legacy Responsive Web Design V8, learning HTML, CSS, Flexbox, Grid, and responsive design to build mobile-friendly web pages.",
+    "imageKey": "FCCresponsive",
+    "category": "FreeCodeCamp",
+    "provider": "FreeCodeCamp",
+    "url": "https://www.freecodecamp.org/certification/zidessy/responsive-web-design"
+  },
+  {
+    "title":"Front End Development Libraries V8",
+    "description": "Completed FreeCodeCamp’s Front End Development Libraries V8, gaining skills in React, Redux, Bootstrap, jQuery, and Sass to build dynamic, responsive web applications.",
+    "imageKey": "FCCFrontend",
+    "category": "FreeCodeCamp",
+    "provider": "FreeCodeCamp",
+    "url": "https://www.freecodecamp.org/certification/zidessy/front-end-development-libraries"
+  },
+  {
+    "title":"Data Visualization V8",
+    "description": "Completed FreeCodeCamp’s Data Visualization V8, learning to create interactive charts and graphs using D3.js, Chart.js, and other visualization libraries to effectively present data.",
+    "imageKey": "FCCdv",
+    "category": "FreeCodeCamp",
+    "provider": "FreeCodeCamp",
+    "url": "https://www.freecodecamp.org/certification/zidessy/data-visualization"
+  },
+  {
+    "title":"Relational Database V8",
+    "description": "Completed FreeCodeCamp’s Relational Databases V8, gaining practical experience with SQL, PostgreSQL, and data modeling to design, query, and manage relational databases effectively.",
+    "imageKey": "FCCrdb",
+    "category": "FreeCodeCamp",
+    "provider": "FreeCodeCamp",
+    "url": "https://www.freecodecamp.org/certification/zidessy/relational-database-v8"
+  },
+  {
+    "title":"Back End Development and APIs V8",
+    "description": "Completed FreeCodeCamp’s Relational Databases V8, gaining practical experience with SQL, PostgreSQL, and data modeling to design, query, and manage relational databases effectively.",
+    "imageKey": "FCCbackend",
+    "category": "FreeCodeCamp",
+    "provider": "FreeCodeCamp",
+    "url": "https://www.freecodecamp.org/certification/zidessy/back-end-development-and-apis"
+  },
+  {
+    "title":"Web Design for Beginners",
+    "description": "Completed the Web Design for Beginners course from CODL, University of Moratuwa, learning fundamental HTML, CSS, and responsive design techniques to create structured and visually appealing web pages.",
+    "imageKey": "UOMWebDesign",
+    "category": "Other",
+    "provider": "University Of Moratuwa",
+    "url": "https://drive.google.com/file/d/1W-LwjcVxJmI9Fo9_8niOoW0TCTqblZgD/view"
+  },
+  {
+    "title":"Front End Development",
+    "description": "Completed the Frontend Development course from CODL, University of Moratuwa, gaining hands-on experience with HTML, CSS, JavaScript, and modern frontend techniques to build responsive and interactive web interfaces.",
+    "imageKey": "UOMFrontEnd",
+    "category": "Other",
+    "provider": "University Of Moratuwa",
+    "url": "https://drive.google.com/file/d/1T6H6xyggrdGPzbavQOQlMiQ6SKzEAneR/view"
+  },
+  {
+    "title":"InnovMind",
+    "description": "Successfully completed the workshop on IOT organized by the IEEE Industry Application Society of SLTC.",
+    "imageKey": "InnovMind",
+    "category": "Other",
+    "provider": "IEEE",
+    "url": "https://drive.google.com/file/d/1qH3cUCrJXjaZP_9nN51MaCEj5AXFJ5Gw/view"
+  },
+  {
+    "title":"Introduction to Cloud Computing",
+    "description": "Completed the Introduction to Cloud Computing course by SkillUp (Simplilearn), learning cloud fundamentals, service models (IaaS, PaaS, SaaS), deployment models, and key concepts for modern cloud-based solutions.",
+    "imageKey": "skillupCC",
+    "category": "Other",
+    "provider": "Simplilearn",
+    "url": "https://drive.google.com/file/d/1MehFvK1PEtB83QULOUukm4G5xvkk6nly/view"
+  },
+  {
+    "title":"Introduction to HTML",
+    "description": "Completed an Introduction to HTML course, learning the fundamentals of HTML5, including structuring web content, semantic tags, forms, links, and basic page layout.",
+    "imageKey": "skillupHTML",
+    "category": "Other",
+    "provider": "Simplilearn",
+    "url": "https://certificates.simplicdn.net/share/3407395_1650766844.pdf"
+  },
+  {
+    "title":"Azure Fundamentals",
+    "description": "Completed the Azure Fundamentals course, learning core concepts of Microsoft Azure, including cloud services, storage, networking, security, and basic deployment of cloud solutions.",
+    "imageKey": "skillupAzure",
+    "category": "Other",
+    "provider": "Simplilearn",
+    "url": "https://drive.google.com/file/d/12VH_8IdzizhsxiqUoMigyvvE1TiY8ZVK/view"
+  },
+  {
+    "title":"Microsoft Azure Cloud Streak 3.0",
+    "description": "Attendance and completion of the Microsoft Student ambassador's azure cloud streak 3.0",
+    "imageKey": "Microsoft",
+    "category": "Other",
+    "provider": "Microsoft",
+    "url": "https://drive.google.com/file/d/1gEwKQPSUkYyIWeCjoL0apaR1j5OBwVVN/view"
+  }
+  
+]
+

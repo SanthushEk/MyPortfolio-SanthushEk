@@ -1,0 +1,136 @@
+[
+  {
+    "id": "1",
+    "title": "To-Do List – Google Apps Script",
+    "category": "AppScript + Google Drive",
+    "tags": ["Google Apps Script", "HTML", "CSS", "JavaScript"],
+    "description":
+      "A basic To-Do List application developed using Google Apps Script to practice task management and core Apps Script fundamentals.",
+    "longDescription": [
+      "This To-Do List application is built using Google Apps Script with Google Drive as the backend for handling task-related data.",
+      "The system allows users to create, view, and manage daily tasks through a simple and intuitive web interface.",
+      "The project focuses on understanding task management workflows, client-side scripting, and Apps Script-based web app deployment.",
+      "This project was developed as a practice application to strengthen knowledge of Google Apps Script, JavaScript logic, and basic UI development."
+    ],
+    "imageKey": "TodoList",
+    "demo": "https://script.google.com/macros/s/AKfycbxmWxO7n56QsGigjv7JmT-gll-eGliLp8McfESMIvEOuDeamqnG4eTJ8vCZFzhmMnkwbw/exec",
+    "github": "https://github.com/SanthushEk/ToDo-App-AppScript.git"
+  },
+  {
+    "id": "2",
+    "title": "Purchase Order Management System",
+    "category": "AppScript + Google Sheets",
+    "tags": [
+      "Google Apps Script",
+      "Google Sheets",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "description": "A basic Purchase Order Management System developed for practice purposes to manage purchase orders and vendor data digitally.",
+    "longDescription": [
+      "The Purchase Order Management System is a lightweight application built using Google Apps Script and Google Sheets as a cloud-based backend.",
+      "The system enables users to create purchase orders, manage vendor details, and view purchase order records through a simple web interface.",
+      "All purchase order and vendor data is stored in Google Sheets, allowing easy access, persistence, and basic tracking without a traditional database.",
+      "This project was developed to practice Google Apps Script automation and to understand fundamental system workflows related to purchase order management."
+    ],
+    "imageKey": "POManagementSystem",
+    "demo": "https://script.google.com/macros/s/AKfycbyjXSY7P5cP0p4vZTqKlXwrnqUkrLBcAf8l92rO89-vItmZJsPSVVaHRPFu359sbJi0qg/exec",
+    "github": "https://github.com/SanthushEk/PO-Management-System-AppScript.git"
+  },
+
+  {
+    "id": 3,
+    "title": "Visit Sri Lanka – Tourism Website",
+    "category": "Web Development",
+    "tags": ["ReactJS", "Tailwind CSS", "JavaScript", "HTML"],
+    "description": "A modern tourism website developed to promote Sri Lanka by showcasing cultural heritage, natural attractions, and popular destinations through a responsive and user-friendly interface.",
+    "longDescription": [
+      "Visit Sri Lanka is a personal frontend web project designed to promote tourism in Sri Lanka for both local and international travelers.",
+      "The website highlights cultural and historical landmarks, natural attractions, and tourist-friendly destinations across the island.",
+      "Built with ReactJS and Tailwind CSS, the project emphasizes modern UI design, mobile-first responsiveness, and clean component-based layouts.",
+      "This project was developed to strengthen frontend development skills, responsive design practices, and building fast, lightweight React applications."
+    ],
+    "imageKey": "VisitCeylon",
+    "demo": "https://visit-sri-lanka-ten.vercel.app/",
+    "github": "https://github.com/SanthushEk/VisitSriLanka.git"
+  },
+  {
+    "id": 4,
+    "title": "Inventory Management System",
+    "category": "AppScirpt + GoogleSheet",
+    "tags": ["AppScript", "Google Sheet", "JavaScript"],
+    "description": "A basic Inventory Management System built for practice purposes to manage items and stock records digitally.",
+    "longDescription": [
+      "This To-Do List application is built using Google Apps Script and Google Sheets as a lightweight backend, allowing users to create, update, and delete daily tasks efficiently.",
+      "The application focuses on simplicity and performance, making it ideal for users who want a fast and minimal task management solution without complex setup.",
+      "Task data is stored securely within Google Sheets, ensuring easy accessibility, persistence, and basic data tracking without requiring a traditional database.",
+      "This project was developed to strengthen practical knowledge of AppScript automation, JavaScript-based UI handling, and spreadsheet-driven application logic."
+    ],
+    "imageKey": "IMS",
+    "demo": "https://script.google.com/macros/s/AKfycbwFiKEfz3ZMH-rZPj855r-VfvdAzMXAYgZVGE5Vq5-ZaRyrTZ8GHMeo48jaLHi0MaNpLA/exec?page=inventory",
+    "github": "https://github.com/SanthushEk/Inventory-Management-System-AppScirpt.git"
+  },
+  {
+    "id": 5,
+    "title": "Portfolio Site",
+    "category": "Web Development",
+    "tags": ["ReactJS", "TailwindCSS", "JavaScript"],
+    "description": "My Original Portfolio Site Build USing React+Tailwind",
+    "imageKey": "MyWebSite",
+    "demo": "#",
+    "github": "#"
+  },
+  {
+    "id": "6",
+    "title": "MP-CHEM.lk ",
+    "category": "Web Development",
+    "tags": ["React", "Laravel", "PHP", "JavaScript", "Tailwindcss", "MySQL"],
+    "description":
+      "A full-featured educational platform including a public-facing website built with React and a robust Learning Management System (LMS).License © Silicon Radon Networks (Pvt) Ltd.",
+    "longDescription": [
+      "MP-CHEM is an educational platform consisting of two main components: a React-based public website and a Laravel-based Learning Management System (LMS).",
+      "The public website provides information about courses, programs, and the institution, focusing on performance and user experience.",
+      "The LMS manages students, courses, instructors, and learning content, including administrative and student panels, supporting academic workflows and reporting.",
+      "Built with modern web technologies, the system incorporates role-based access control, MVC architecture, REST APIs, and scalable deployment practices.",
+      "As a Core Developer, I contributed to both frontend and backend development, system design, feature implementation, bug fixing, and optimization while collaborating with the internal team."
+    ],
+    "imageKey": "MPCHEM",
+    "demo": "https://your-demo-link-here.com",
+    "github": "https://github.com/SanthushEk/MP-CHEM-LMS-Website"
+  },
+  {
+    "id": "7",
+    "title": "HillCity Advertising",
+    "category": "Frontend Web Application",
+    "tags": ["React", "Tailwind CSS", "Framer Motion", "JavaScript","TailwindCSS"],
+    "description":
+      "A modern, interactive web application for HillCity Advertising, showcasing services, events, brand activations, and contact information with responsive design and smooth animations.",
+    "longDescription": [
+      "HillCity Advertising is a professional React-based web application for a leading outdoor advertising agency in Kandy, built to highlight services, sustainability projects, and brand activations.",
+      "The platform emphasizes responsive design, engaging animations using Framer Motion, and a visually appealing UI optimized for desktop, tablet, and mobile devices.",
+      "Key features include detailed service showcases, events & promotions sections, a contact page with Google Maps integration, social media links, and fully functional navbar & footer components.",
+      "This project demonstrates advanced frontend development skills, modern React component structuring, animation integration, and production-ready deployment practices."
+    ],
+    "imageKey": "HillCity",
+    "demo": "https://hill-city-advertising-website.vercel.app/",
+    "github": "https://github.com/SanthushEk/HillCityAdvertising-Website.git"
+  },
+  {
+    "id": "8",
+    "title": "Patient-Centric Healthcare Management System (HMS)",
+    "category": "Research & Web Application",
+    "tags": ["React.js", "Vite", "Tailwind CSS", "Node.js", "Express.js", "MySQL", "JWT", "Blockchain", "AWS"],
+    "description":
+      "A research-based patient-centric Healthcare Management System (HMS) designed to digitize hospital workflows in Sri Lanka, with secure blockchain-based authentication and cloud-ready architecture.",
+    "longDescription": [
+      "This HMS was developed as part of a university final-year research project (Grade: A), focusing on patient-centric care, secure hospital policy enforcement, and blockchain-based login for digital transformation in Sri Lanka's healthcare sector.",
+      "The system addresses gaps in government hospitals that rely on paper-based or partially digital processes, providing improved data integrity, operational efficiency, and trust.",
+      "Key features include patient dashboards, role-based access control, hospital policy enforcement, digital medical records, and a scalable cloud architecture deployable on AWS.",
+      "The project demonstrates a proof-of-concept for nationwide digitization, highlighting how blockchain can enhance security and trust while maintaining a patient-centric design."
+    ],
+    "imageKey": "HMS",
+    "demo": "https://drive.google.com/file/d/1WvceVE3m3KSjOh1eLJaRaFLAdmJrkHik/view?usp=sharing",
+    "github": "https://github.com/SanthushEk/HealthCare-HMS.git"
+  }    
+]
