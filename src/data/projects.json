@@ -72,15 +72,23 @@
     "github": "https://github.com/SanthushEk/Inventory-Management-System-AppScirpt.git"
   },
   {
-    "id": 5,
-    "title": "Portfolio Site",
+    "id": "5",
+    "title": "SanthushEk – Portfolio Website",
     "category": "Web Development",
-    "tags": ["ReactJS", "TailwindCSS", "JavaScript"],
-    "description": "My Original Portfolio Site Build USing React+Tailwind",
+    "tags": ["ReactJS", "Vite", "TailwindCSS", "JavaScript", "Framer Motion"],
+    "description": "My personal portfolio website showcasing web development, research, and full-stack projects. Frontend-only React application with a modern, responsive design.",
+    "longDescription": [
+      "SanthushEk – Portfolio Website is my personal frontend project designed to present my professional profile, technical skills, and completed projects in a clean and modern format.",
+      "The application is built as a frontend-only React project using Vite for fast development and optimized builds, ensuring excellent performance and responsiveness across all devices.",
+      "The site showcases more than 10 projects, each with detailed descriptions, technology stacks, live demo links, and GitHub repositories for easy exploration.",
+      "Interactive user experience is enhanced using Framer Motion animations, providing smooth transitions and engaging visual feedback without compromising performance.",
+      "The project follows a mobile-first design approach with Tailwind CSS, making it fully responsive and suitable for static deployment platforms such as Vercel or Netlify.",
+      "This portfolio serves as a central hub to demonstrate my expertise in modern web development, UI/UX design principles, and frontend engineering best practices."
+    ],
     "imageKey": "MyWebSite",
-    "demo": "#",
-    "github": "#"
-  },
+    "demo": "https://my-portfolio-santhush-ek.vercel.app/",
+    "github": "https://github.com/SanthushEk/MyPortfolio-SanthushEk.git"
+  },  
   {
     "id": "6",
     "title": "MP-CHEM.lk ",

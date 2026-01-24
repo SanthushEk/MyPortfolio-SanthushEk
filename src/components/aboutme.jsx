@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { GraduationCap, Briefcase, ExternalLink, MapPin } from "lucide-react";
 
 // Images
-import profilePic from "../assets/Profile_pic.jpg";
+import profilePic from "../assets/Personal Images/14.jpg";
 import schoolLogo from "../assets/SSCK.png";
 import campusLogo from "../assets/SLTC.png";
 import companyLogo from "../assets/Silicon_radon_logo.jfif";

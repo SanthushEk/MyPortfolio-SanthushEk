@@ -1,9 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { GiSchoolBag } from "react-icons/gi";
+import { GiSchoolBag, GiAchievement, GiTrophyCup } from "react-icons/gi";
+
+// ALL IMAGE IMPORTS
 import school1 from "../../assets/MySelf/school01.jpeg";
 import school2 from "../../assets/MySelf/school02.jpeg";
 import school3 from "../../assets/MySelf/school03.jpeg";
+import school4 from "../../assets/MySelf/SSCK.png";
+
 
 /* ---------------- Framer Motion Variants ---------------- */
 
@@ -11,34 +15,25 @@ const containerVariant = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.2, delayChildren: 0.2 },
+    transition: { staggerChildren: 0.15, delayChildren: 0.1 },
   },
 };
 
-const sectionVariant = {
-  hidden: { opacity: 0, y: 50 },
+const itemVariant = {
+  hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
   },
 };
 
-const imageVariant = {
-  hidden: { opacity: 0, scale: 0.95 },
+const imageReveal = {
+  hidden: { clipPath: "inset(10% 10% 10% 10% rounded 20px)", opacity: 0 },
   visible: {
+    clipPath: "inset(0% 0% 0% 0% rounded 12px)",
     opacity: 1,
-    scale: 1,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
-};
-
-const textVariant = {
-  hidden: { opacity: 0, x: -50 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
+    transition: { duration: 1, ease: [0.16, 1, 0.3, 1] },
   },
 };
 
@@ -47,142 +42,137 @@ const textVariant = {
 const School = () => {
   return (
     <motion.section
+      id="school"
       variants={containerVariant}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
-      className="relative flex flex-col md:flex-row items-start gap-6 py-10 md:py-20 px-6 md:px-16 bg-white text-gray-900 md:h-screen"
+      viewport={{ once: true, amount: 0.2 }}
+      className="relative min-h-screen flex flex-col lg:flex-row items-center gap-10 py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-gray-50 overflow-hidden"
     >
-      {/* ---------------- Left Side – Image Gallery ---------------- */}
-      <motion.div
-        variants={sectionVariant}
-        className="md:w-1/2 flex flex-col gap-4 h-full"
-      >
-        <div className="grid grid-rows-3 gap-4 h-full">
+      {/* Background Decor */}
+      <div className="absolute top-0 right-0 p-20 opacity-[0.03] pointer-events-none text-black">
+        <GiSchoolBag size={400} />
+      </div>
+
+      {/* ---------------- Left Side – Bento Image Gallery ---------------- */}
+      <div className="w-full lg:w-1/2 h-full">
+        <div className="grid grid-cols-12 grid-rows-6 gap-3 md:gap-4 h-[500px] md:h-[650px]">
+          
+          {/* Main Large Image */}
           <motion.div
-            variants={imageVariant}
-            className="row-span-2 overflow-hidden rounded-lg shadow-lg"
+            variants={imageReveal}
+            className="col-span-8 row-span-4 overflow-hidden shadow-2xl relative group"
           >
             <img
-              src={school2}
+              src={school1}
               alt="School Life"
-              className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+              className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </motion.div>
+
+          {/* Top Right Image */}
+          <motion.div
+            variants={imageReveal}
+            className="col-span-4 row-span-3 overflow-hidden shadow-xl"
+          >
+            <img
+              src={school3}
+              alt="Activity"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
             />
           </motion.div>
 
-          <div className="row-span-1 grid grid-cols-2 gap-4">
-            <motion.div
-              variants={imageVariant}
-              className="overflow-hidden rounded-lg shadow-lg"
-            >
-              <img
-                src={school1}
-                alt="School Activity"
-                className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-              />
-            </motion.div>
+          {/* THE UPDATED TROPHY BLOCK WITH IMAGE IMPORT */}
+          <motion.div
+            variants={imageReveal}
+            className="col-span-4 row-span-3 overflow-hidden shadow-xl relative group"
+          >
+            {/* Background Image for Trophy */}
+            <img 
+              src={school4} 
+              alt="Achievement Background" 
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            {/* Teal Overlay with Content */}
+            <div className="absolute inset-0 bg-[#33cdcc]/70 backdrop-blur-[2px] flex items-center justify-center p-6 text-white text-center">
+              <div className="flex flex-col items-center">
+                <GiTrophyCup className="text-4xl mb-2 drop-shadow-md animate-pulse" />
+                <p className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] leading-tight">
+                  St. Sylvester's <br /> College
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
-            <motion.div
-              variants={imageVariant}
-              className="overflow-hidden rounded-lg shadow-lg"
-            >
-              <img
-                src={school3}
-                alt="School Event"
-                className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-              />
-            </motion.div>
-          </div>
+          {/* Bottom Right Image */}
+          <motion.div
+            variants={imageReveal}
+            className="col-span-8 row-span-2 overflow-hidden shadow-xl"
+          >
+            <img
+              src={school2} 
+              alt="Event"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+            />
+          </motion.div>
         </div>
-      </motion.div>
-
-      {/* Divider */}
-      <div className="hidden md:block w-px bg-gray-300" />
+      </div>
 
       {/* ---------------- Right Side – Content ---------------- */}
       <motion.div
-        variants={sectionVariant}
-        className="md:w-1/2 flex flex-col justify-center h-full md:p-10"
+        variants={itemVariant}
+        className="w-full lg:w-1/2 flex flex-col justify-center z-10"
       >
-        {/* Title */}
-        <motion.h2
-          variants={textVariant}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-[#33cdcc] flex items-center gap-3"
-        >
-          <GiSchoolBag className="w-8 h-8 sm:w-10 sm:h-10" />
-          School Life
-        </motion.h2>
+        <div className="bg-white/70 backdrop-blur-md p-6 md:p-10 rounded-3xl border border-white shadow-2xl shadow-gray-200/50">
+          <div className="mb-8">
+            <motion.div variants={itemVariant} className="flex items-center gap-3 mb-2">
+              <div className="h-[2px] w-12 bg-[#33cdcc]" />
+              <span className="text-[#33cdcc] font-bold tracking-[0.3em] text-xs uppercase">Education Journey</span>
+            </motion.div>
+            <motion.h2 variants={itemVariant} className="text-4xl md:text-5xl font-black text-gray-900 leading-none">
+              School Life<span className="text-[#33cdcc]">.</span>
+            </motion.h2>
+          </div>
 
-        {/* Intro */}
-        <motion.p
-          variants={textVariant}
-          className="text-base sm:text-lg md:text-sm lg:text-base leading-relaxed text-justify mb-6"
-        >
-          I completed my primary and secondary education at St. Sylvester’s
-          College, where I developed a strong academic foundation, personal
-          discipline, and leadership capabilities. The school environment played
-          a vital role in shaping my analytical thinking, teamwork skills, and
-          long-term interest in technology and continuous learning.
-        </motion.p>
+          <motion.p variants={itemVariant} className="text-gray-600 text-base md:text-lg leading-relaxed mb-8 border-l-4 border-[#33cdcc]/20 pl-4 text-justify">
+            I completed my primary and secondary education at <strong>St. Sylvester’s College</strong>, 
+            where I developed a strong academic foundation and leadership capabilities that 
+            sparked my lifelong interest in technology.
+          </motion.p>
 
-        {/* Academic Achievements */}
-        <motion.div variants={textVariant} className="mb-6">
-          <h3 className="font-bold text-lg mb-2 text-gray-900">
-            Academic Achievements
-          </h3>
-          <ul className="list-disc list-inside space-y-2 text-justify marker:text-[#33cdcc]">
-            <li>
-              Successfully passed the{" "}
-              <strong>Grade 5 Scholarship Examination</strong>, demonstrating
-              early academic potential.
-            </li>
-            <li>
-              Achieved more than <strong>six A grades</strong> at the General
-              Certificate of Education Ordinary Level (
-              <strong>G.C.E. O/L</strong>) examinations.
-            </li>
-            <li>
-              Completed Advanced Level (A/L) studies in the{" "}
-              <strong>Technology Stream</strong>, specializing in{" "}
-              <strong>Information and Communication Technology (ICT)</strong>,{" "}
-              <strong>Engineering Technology</strong>, and{" "}
-              <strong>Science for Technology</strong>.
-            </li>
-            <li>
-              Established a strong foundation in applied sciences, technology
-              concepts, and analytical problem-solving.
-            </li>
-          </ul>
-        </motion.div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <motion.div variants={itemVariant} className="space-y-4">
+              <div className="flex items-center gap-2 text-[#33cdcc]">
+                <GiAchievement className="text-2xl" />
+                <h3 className="font-black text-sm uppercase tracking-wider text-gray-800">Academics</h3>
+              </div>
+              <ul className="space-y-3">
+                {["Grade 5 Scholarship Success", "6+ A Grades in G.C.E. O/L", "A/L Technology Stream", "ICT & Engineering"].map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#33cdcc] shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
 
-        {/* Leadership & Extracurricular */}
-        <motion.div variants={textVariant}>
-          <h3 className="font-bold text-lg mb-2 text-gray-900">
-            Leadership & Extracurricular Involvement
-          </h3>
-          <ul className="list-disc list-inside space-y-2 text-justify marker:text-[#33cdcc]">
-            <li>
-              Represented the college in <strong>basketball</strong>,{" "}
-              <strong>cricket</strong>, and <strong>wushu</strong>, developing
-              discipline, teamwork, and resilience.
-            </li>
-            <li>
-              Served as <strong>Deputy Secretary of the Technology Club</strong>,
-              contributing to technical initiatives and coordination of club
-              activities.
-            </li>
-            <li>
-              Active member of the <strong>Information Technology Club</strong>,{" "}
-              <strong>Astronomical Society</strong>, and{" "}
-              <strong>History Club</strong>, strengthening interdisciplinary
-              knowledge and analytical thinking.
-            </li>
-            <li>
-              Member of the <strong>Junior Music Team</strong>, fostering
-              creativity, collaboration, and performance discipline.
-            </li>
-          </ul>
-        </motion.div>
+            <motion.div variants={itemVariant} className="space-y-4">
+              <div className="flex items-center gap-2 text-[#33cdcc]">
+                <GiTrophyCup className="text-2xl" />
+                <h3 className="font-black text-sm uppercase tracking-wider text-gray-800">Extracurricular</h3>
+              </div>
+              <ul className="space-y-3">
+                {["Deputy Secretary - Tech Club", "Basketball, Cricket & Wushu", "Astronomical Society", "Junior Music Team"].map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#33cdcc] shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+        </div>
       </motion.div>
     </motion.section>
   );

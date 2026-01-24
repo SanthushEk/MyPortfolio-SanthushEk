@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
-import { FaGithub, FaLinkedin, FaInstagram, FaAws, FaCode } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaAws, FaCode, FaFacebook, FaXTwitter } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
 
 // Image Imports
 import profileImg from "../assets/Landing Page/Me.png";
@@ -40,6 +41,15 @@ const Hero = () => {
   const containerRef = useRef(null);
   const [time, setTime] = useState("");
 
+  // Social Media Data
+  const socials = [
+    { Icon: FaLinkedin, href: "https://www.linkedin.com/in/santhush-ekanayake-606301224/", color: "hover:text-[#0077b5]" },
+    { Icon: FaGithub, href: "https://github.com/", color: "hover:text-white" }, // Add your Github handle here
+    { Icon: FaXTwitter, href: "http://x.com/Santhush_24", color: "hover:text-white" },
+    { Icon: FaInstagram, href: "https://www.instagram.com/zid_essy/", color: "hover:text-[#e4405f]" },
+    { Icon: FaFacebook, href: "https://www.facebook.com/santhush.ekanayake.75/", color: "hover:text-[#1877f2]" },
+  ];
+
   useEffect(() => {
     const updateClock = () => {
       const options = { timeZone: 'Asia/Colombo', hour: '2-digit', minute: '2-digit', hour12: true };
@@ -67,7 +77,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* TOP BADGES: Responsive positioning */}
+      {/* TOP BADGES */}
       <motion.div 
         initial={{ opacity: 0, y: -20 }} 
         animate={{ opacity: 1, y: 0 }} 
@@ -108,13 +118,28 @@ const Hero = () => {
             <span className="text-[#33cdcc]">Cloud</span> | <span className="text-[#33cdcc]">DevOps</span> | <span className="text-[#33cdcc]">FullStack</span> Developer specialized in building scalable and secure ecosystems.
           </motion.p>
 
-          <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center pt-4">
-            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/Santhush_CV.pdf" download className="w-full sm:w-auto text-center px-10 py-5 bg-[#33cdcc] text-black font-black uppercase text-[10px] tracking-[0.2em] rounded-sm shadow-[0_0_30px_rgba(51,205,204,0.15)]">
+          <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center pt-4">
+            <motion.a 
+              whileHover={{ scale: 1.05 }} 
+              whileTap={{ scale: 0.95 }} 
+              href="/Santhush_CV.pdf" 
+              download 
+              className="w-full sm:w-auto text-center px-10 py-5 bg-[#33cdcc] text-black font-black uppercase text-[10px] tracking-[0.2em] rounded-sm shadow-[0_0_30px_rgba(51,205,204,0.15)]"
+            >
               Get Resume
             </motion.a>
-            <div className="flex gap-6 text-white/20 ml-2 sm:ml-0">
-              {[FaGithub, FaLinkedin, FaInstagram].map((Icon, i) => (
-                <a key={i} href="#" className="hover:text-[#33cdcc] transition-all text-2xl hover:-translate-y-1 transform"><Icon /></a>
+            <div className="flex flex-wrap gap-5 text-white/30 ml-2 sm:ml-0">
+              {socials.map(({ Icon, href, color }, i) => (
+                <motion.a 
+                  key={i} 
+                  href={href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -5, opacity: 1 }}
+                  className={`${color} transition-all text-xl lg:text-2xl transform`}
+                >
+                  <Icon />
+                </motion.a>
               ))}
             </div>
           </div>
@@ -128,7 +153,6 @@ const Hero = () => {
             <img src={bgImg} alt="BG" className="absolute inset-0 w-full h-full object-cover scale-110 blur-3xl opacity-20" />
             <motion.img initial={{ scale: 1.1 }} animate={{ scale: 1 }} transition={{ duration: 1.5 }} src={profileImg} className="relative z-10 w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-1000" />
             
-            {/* CLOCK: Mobile friendly size */}
             <div className="absolute bottom-6 left-6 lg:bottom-10 lg:left-10 z-30 flex flex-col gap-0.5 lg:gap-1">
                 <span className="text-[#33cdcc] font-mono text-[8px] lg:text-[10px] tracking-widest font-bold uppercase">Local Time (CMB)</span>
                 <span className="text-white text-2xl lg:text-3xl font-bold tracking-tighter">{time}</span>
