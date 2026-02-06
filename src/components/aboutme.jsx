@@ -199,7 +199,7 @@ const AboutMe = () => {
                 Detailed Portfolio <ExternalLink size={18} />
               </button>
               <a
-                href="/myCV.pdf"
+                href="/SanthushEkanayakeCV.pdf"
                 download="Santhush_Ekanayake_CV.pdf"
                 className="inline-block px-8 py-4 rounded-full border-2 border-slate-200 font-bold hover:bg-slate-50 transition-colors"
               >

@@ -122,7 +122,7 @@ const Hero = () => {
             <motion.a 
               whileHover={{ scale: 1.05 }} 
               whileTap={{ scale: 0.95 }} 
-              href="/myCV.pdf" 
+              href="/SanthushEkanayakeCV.pdf" 
               download 
               className="w-full sm:w-auto text-center px-10 py-5 bg-[#33cdcc] text-black font-black uppercase text-[10px] tracking-[0.2em] rounded-sm shadow-[0_0_30px_rgba(51,205,204,0.15)]"
             >
