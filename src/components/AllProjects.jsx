@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Github, Info } from "lucide-react"; // Modern Icons
+import { ExternalLink, Github, Info } from "lucide-react"; 
 import projectsData from "../data/projects.json";
 import ProjectModal from "../components/pages/ProjectModel";
 
@@ -14,9 +14,12 @@ import MPCHEM from "../assets/Projects/06.MPCHEM.png";
 import HillCity from "../assets/Projects/07.HillCity.png";
 import HMS from "../assets/Projects/08.HMS.png";
 import ProjectsBg from "../assets/Skills/moreProjects.jpg";
+import Invento from "../assets/Projects/09.Invento.png";
+import PrimeFlow from "../assets/Projects/10.PrimeFlow.png";
+
 
 const projectImages = {
-  VisitCeylon, IMS, MyWebSite, POManagementSystem, TodoList, MPCHEM, HillCity, HMS,
+  VisitCeylon, IMS, MyWebSite, POManagementSystem, TodoList, MPCHEM, HillCity, HMS, Invento, PrimeFlow
 };
 
 const AllProjects = () => {
