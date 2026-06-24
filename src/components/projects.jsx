@@ -12,17 +12,22 @@ import ProjectModal from "../components/pages/ProjectModel";
 import MPCHEM from "../assets/Projects/06.MPCHEM.png";
 import HillCity from "../assets/Projects/07.HillCity.png";
 import HMS from "../assets/Projects/08.HMS.png";
+import Invento from "../assets/Projects/09.Invento.png";
+import PrimeFlow from "../assets/Projects/10.PrimeFlow.png";
+
+
+
 
 /* -------------------- Background -------------------- */
 import ProjectsBg from "../assets/Skills/projectBG.jpg";
 
-const projectImages = { MPCHEM, HillCity, HMS };
+const projectImages = { MPCHEM, HillCity, HMS, Invento, PrimeFlow };
 
 // --- KPI Stats Component ---
 const ProjectStats = () => {
   const stats = [
-    { label: "Total Projects", value: "44", color: "from-[#33cdcc] to-teal-400" },
-    { label: "Mini Solutions", value: "36", color: "from-blue-400 to-indigo-500" },
+    { label: "Total Projects", value: "45", color: "from-[#33cdcc] to-teal-400" },
+    { label: "Mini Solutions", value: "37", color: "from-blue-400 to-indigo-500" },
     { label: "Enterprise Scale", value: "08", color: "from-purple-400 to-[#33cdcc]" },
   ];
 
