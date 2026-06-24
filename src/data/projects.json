@@ -140,5 +140,57 @@
     "imageKey": "HMS",
     "demo": "https://drive.google.com/file/d/1WvceVE3m3KSjOh1eLJaRaFLAdmJrkHik/view?usp=sharing",
     "github": "https://github.com/SanthushEk/HealthCare-HMS.git"
-  }    
+  },
+  {
+  "id": "9",
+  "title": "Invento – Product Management Dashboard (Basic)",
+  "category": "Next.js + React.js",
+  "tags": [
+    "Next.js",
+    "React.js",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Local Storage",
+    "JavaScript"
+  ],
+  "description": "A modern Product Management Dashboard built with Next.js, React.js, and Tailwind CSS that allows users to add, view, edit, and delete products with persistent local storage support.",
+  "longDescription": [
+    "Invento is a modern Product Management Dashboard developed using Next.js, React.js, and Tailwind CSS as part of a Full Stack Intern Assessment project.",
+    "The application enables users to perform complete product management operations including creating, viewing, editing, and deleting products through an intuitive and responsive user interface.",
+    "Product information is stored using browser Local Storage, ensuring data persistence even after refreshing the application without requiring a backend database.",
+    "The project follows a modular component-based architecture with reusable React components, making the application scalable and maintainable.",
+    "Additional features include dark and light mode support, toast notifications for user actions, responsive layouts, and modern UI elements powered by shadcn/ui and Lucide React.",
+    "This project was developed to demonstrate practical skills in React development, Next.js project structure, state management, CRUD operations, responsive UI design, and frontend application architecture."
+  ],
+  "imageKey": "Invento",
+  "demo": "https://invento-black.vercel.app/",
+  "github": "https://github.com/SanthushEk/Invento.git"
+},
+{
+  "id": "10",
+  "title": "PrimeFlow-CRM Basic Project",
+  "category": "React + Node.js + PostgreSQL",
+  "tags": [
+    "React.js",
+    "Vite",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "JWT",
+    "Tailwind CSS",
+    "REST API"
+  ],
+  "description": "A full-stack Customer Relationship Management (CRM) system designed for small sales teams/(Email: admin@example.com, Password: password123).",
+  "longDescription": [
+    "PrimeFlow CRM is a modern full-stack lead management application developed using React, Node.js, Express, and PostgreSQL to streamline customer relationship management processes.",
+    "The system enables sales teams to create, manage, update, and track customer leads throughout the sales pipeline using a centralized dashboard.",
+    "Users can monitor lead statuses, maintain activity notes, and gain valuable insights through business analytics and KPI-based visualizations.",
+    "The application implements JWT-based authentication to provide secure access to CRM features, including lead management and note tracking functionalities.",
+    "PrimeFlow CRM integrates with a cloud-hosted PostgreSQL database using NeonDB and is deployed using Railway for the backend and Vercel for the frontend.",
+    "The project was developed as part of an internship assessment to demonstrate practical full-stack development skills, REST API development, database integration, authentication, deployment, and real-world CRM workflow implementation."
+  ],
+  "imageKey": "PrimeFlow",
+  "demo": "https://prime-flow-crm-project.vercel.app/",
+  "github": "https://github.com/SanthushEk/PrimeFlow-CRM-Project.git"
+} 
 ]
